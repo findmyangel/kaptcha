@@ -1,0 +1,48 @@
+#summary How to use kaptcha
+#labels Featured
+
+= Introduction =
+
+Basic use of [http://code.google.com/p/kaptcha/ kaptcha] in your webapp is quite easy. All you need to do is add the jar to your project, make a reference to the [http://code.google.com/p/kaptcha/ kaptcha] servlet in your web.xml and then check the servlet session for the generated kaptcha value and compare it to what the user submits on your form.
+
+== Details ==
+
+ * Put the image tag into your page:
+
+{{{
+<form action="submit.action">
+    <img src="/kaptcha" /> <input type="text" name="kaptcha" value="" />
+</form>
+}}}
+
+ * Put the reference in your web.xml:
+
+{{{
+<servlet>
+	<servlet-name>Kaptcha</servlet-name>
+	<servlet-class>com.google.code.kaptcha.servlet.CaptchaServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>Kaptcha</servlet-name>
+	<url-pattern>/kaptcha</url-pattern>
+</servlet-mapping>
+}}}
+
+ * In your code that manages the submit action:
+
+{{{
+String kaptchaExpected = (String)request.getSession()
+    .getAttribute(com.google.code.kaptcha.servlet.Constants.SIMPLE_CAPCHA_SESSION_KEY);
+String kaptchaReceived = request.getParamater("kaptcha");
+
+if (!kaptchaReceived.equalsIgnoreCase(kaptchaExpected))
+{
+    setError("kaptcha", "Invalid validation code.");
+}
+}}}
+
+That is it!
+
+== Customization ==
+
+There are many parameters to customize the output of the kaptcha. For now, please refer to the [http://simplecaptcha.sourceforge.net/config.html simplecaptcha configuration page].
