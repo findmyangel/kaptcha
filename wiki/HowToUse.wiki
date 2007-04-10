@@ -41,6 +41,8 @@ if (kaptchaReceived != null && !kaptchaReceived.equalsIgnoreCase(kaptchaExpected
 }
 }}}
 
+ * Make sure to start your JDK with *-Djava.awt.headless=true*
+
 That is it!
 
 == Customization ==
