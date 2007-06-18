@@ -35,7 +35,7 @@ String kaptchaExpected = (String)request.getSession()
     .getAttribute(com.google.code.kaptcha.Constants.CAPCHA_SESSION_KEY);
 String kaptchaReceived = request.getParamater("kaptcha");
 
-if (kaptchaReceived != null && !kaptchaReceived.equalsIgnoreCase(kaptchaExpected))
+if (kaptchaReceived == null || !kaptchaReceived.equalsIgnoreCase(kaptchaExpected))
 {
     setError("kaptcha", "Invalid validation code.");
 }
