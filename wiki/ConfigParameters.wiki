@@ -1,0 +1,32 @@
+#labels Featured,Phase-Implementation
+= Introduction =
+
+Configuration is done through web.xml. All values can be left blank and a default value will be chosen.
+
+This is an example of the init-param you would add to your web.xml:
+
+{{{
+<init-param>
+    <param-name>kaptcha.border</param-name>
+    <param-value>yes</param-value>
+</init-param>
+}}}
+
+= Details =
+
+|| kpatcha.border || Border around kaptcha. Legal values are yes or no. Defaults to yes. ||
+|| kpatcha.border.color || Color of the border. Legal values are r,g,b (and optional alpha) or white,black,blue. ||
+|| kpatcha.border.thickness || Thickness of the border around kaptcha. Legal values are > 0. Defaults to 1. ||
+|| kaptcha.producer.impl || The image producer. Defaults to com.google.code.kaptcha.impl.DefaultKaptcha ||
+|| kaptcha.textproducer.impl || The text producer. Defaults to com.google.code.kaptcha.text.impl.DefaultTextCreator ||
+|| kaptcha.textproducer.char.string || The characters that will create the kaptcha. ||
+|| kaptcha.textproducer.char.length || The number of characters to display. Defaults to 5. ||
+|| kaptcha.textproducer.font.names || A list of comma separated font names. Defaults to Arial, Courier ||
+|| kaptcha.textproducer.font.size || The size of the font to use. Defaults to 40px. ||
+|| kaptcha.textproducer.font.color || The color to use for the font. Legal values are r,g,b. Defaults to black. ||
+|| kaptcha.noise.impl || The noise producer. Defaults to com.google.code.kaptcha.impl.DefaultNoise ||
+|| kaptcha.noise.color || The noise color. Legal values are r,g,b. Defaults to black. ||
+|| kaptcha.obscurificator.impl || The obscurificator implementation. Defaults to com.google.code.kaptcha.impl.WaterRipple ||
+|| kaptcha.background.impl || The background implementation. Defaults to com.google.code.kaptcha.impl.DefaultBackground ||
+|| kaptcha.background.clear.from || Starting background color. Legal values are r,g,b. Defaults to light grey ||
+|| kaptcha.background.clear.to || Ending background color. Legal values are r,g,b. Defaults to white. ||
