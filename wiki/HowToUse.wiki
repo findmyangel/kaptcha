@@ -20,7 +20,7 @@ Basic use of [http://code.google.com/p/kaptcha/ kaptcha] in your webapp is quite
 {{{
 <servlet>
 	<servlet-name>Kaptcha</servlet-name>
-	<servlet-class>com.google.code.kaptcha.servlet.CaptchaServlet</servlet-class>
+	<servlet-class>com.google.code.kaptcha.servlet.KaptchaServlet</servlet-class>
 </servlet>
 <servlet-mapping>
 	<servlet-name>Kaptcha</servlet-name>
@@ -32,7 +32,7 @@ Basic use of [http://code.google.com/p/kaptcha/ kaptcha] in your webapp is quite
 
 {{{
 String kaptchaExpected = (String)request.getSession()
-    .getAttribute(com.google.code.kaptcha.Constants.CAPCHA_SESSION_KEY);
+    .getAttribute(com.google.code.kaptcha.Constants.KAPTCHA_SESSION_KEY);
 String kaptchaReceived = request.getParamater("kaptcha");
 
 if (kaptchaReceived == null || !kaptchaReceived.equalsIgnoreCase(kaptchaExpected))
@@ -47,4 +47,4 @@ That is it!
 
 == Customization ==
 
-There are many parameters to customize the output of the kaptcha. For now, please refer to the [http://simplecaptcha.sourceforge.net/config.html simplecaptcha configuration page].
+There are many [ConfigParameters web.xml parameters] to customize the output of the kaptcha.
