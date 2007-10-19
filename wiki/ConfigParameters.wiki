@@ -3,7 +3,7 @@
 
 Configuration is done through web.xml. All values can be left blank and a default value will be chosen.
 
-This is an example of the init-param you would add to your web.xml:
+Below is an example of the init-param you would add to your web.xml. If you want to set other variables, then you would add more init-param blocks.
 
 {{{
 <init-param>
@@ -11,6 +11,8 @@ This is an example of the init-param you would add to your web.xml:
     <param-value>yes</param-value>
 </init-param>
 }}}
+
+Note: This only works with the KaptchaServlet. SimpleServlet does not pay attention to the web.xml parameters.
 
 = Details =
 
