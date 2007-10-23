@@ -45,6 +45,20 @@ if (kaptchaReceived == null || !kaptchaReceived.equalsIgnoreCase(kaptchaExpected
 
 That is it!
 
+== Extra ==
+
+If you love [http://jquery.com JQuery] like I do, you can use it to easily solve the problem that happens when someone can't read the image that was generated for them. What this does is bind a function to the onclick handler for the img element so that when the image is clicked on, it will get reloaded. Note the use of the query string to append a random number to the end. This is because the browser has already cached the image and the query string makes it look like a new request.
+
+{{{
+<img src="/kaptcha" width="200" id="kaptchaImage" />
+<script type="text/javascript">
+    $(function(){
+        $('#kaptchaImage').click(function () { $(this).attr('src', '/kaptcha?' + Math.floor(Math.random()*100) ); })
+    });
+</script>
+<br /><small>Can't read the image? Click it to get a new one.</small>
+}}}
+
 == Customization ==
 
 There are many [ConfigParameters web.xml parameters] to customize the output of the kaptcha.
