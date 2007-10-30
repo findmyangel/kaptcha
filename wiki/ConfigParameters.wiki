@@ -16,9 +16,9 @@ Note: This only works with the KaptchaServlet. SimpleServlet does not pay attent
 
 = Details =
 
-|| kpatcha.border || Border around kaptcha. Legal values are yes or no. Defaults to yes. ||
-|| kpatcha.border.color || Color of the border. Legal values are r,g,b (and optional alpha) or white,black,blue. ||
-|| kpatcha.border.thickness || Thickness of the border around kaptcha. Legal values are > 0. Defaults to 1. ||
+|| kaptcha.border || Border around kaptcha. Legal values are yes or no. Defaults to yes. ||
+|| kaptcha.border.color || Color of the border. Legal values are r,g,b (and optional alpha) or white,black,blue. ||
+|| kaptcha.border.thickness || Thickness of the border around kaptcha. Legal values are > 0. Defaults to 1. ||
 || kaptcha.producer.impl || The image producer. Defaults to com.google.code.kaptcha.impl.DefaultKaptcha ||
 || kaptcha.textproducer.impl || The text producer. Defaults to com.google.code.kaptcha.text.impl.DefaultTextCreator ||
 || kaptcha.textproducer.char.string || The characters that will create the kaptcha. ||
