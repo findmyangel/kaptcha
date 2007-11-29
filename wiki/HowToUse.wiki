@@ -5,7 +5,19 @@
 
 Basic use of [http://code.google.com/p/kaptcha/ kaptcha] in your webapp is quite easy. All you need to do is add the jar to your project, make a reference to the [http://code.google.com/p/kaptcha/ kaptcha] servlet in your web.xml and then check the servlet session for the generated kaptcha value and compare it to what the user submits on your form.
 
+== Example ==
+
+Included in the distribution is an example .war file for you to play with. For easiest setup, download [http://tomcat.apache.org Tomcat]. I use 5.5.x.
+
+Then, copy the kaptcha.war file into the webapps directory. Make sure it is named 'kaptcha.war'. Then, start up Tomcat. I type {{{bin/catalina.sh run}}}.
+
+Now, visit: http://localhost:8080/kaptcha/KaptchaExample.jsp
+
+If you edit the web.xml file in the exploded kaptcha.war folder you can test changes to the ConfigParameters quite easily.
+
 == Details ==
+
+Here are the details of how to integrate Kaptcha into your own application.
 
  * Put the image tag into your page:
 
