@@ -32,5 +32,5 @@ Note: This only works with the KaptchaServlet. SimpleServlet does not pay attent
 || kaptcha.background.impl || The background implementation. Defaults to com.google.code.kaptcha.impl.DefaultBackground ||
 || kaptcha.background.clear.from || Starting background color. Legal values are r,g,b. Defaults to light grey ||
 || kaptcha.background.clear.to || Ending background color. Legal values are r,g,b. Defaults to white. ||
-|| kaptcha.word.impl|| The word renderer implementation. Defaults to
+|| kaptcha.word.impl || The word renderer implementation. Defaults to
 com.google.code.kaptcha.text.impl.DefaultWordRenderer ||
