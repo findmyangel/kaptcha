@@ -7,9 +7,9 @@ Basic use of [http://code.google.com/p/kaptcha/ kaptcha] in your webapp is quite
 
 == Example ==
 
-Included in the distribution is an example .war file for you to play with. For easiest setup, download [http://tomcat.apache.org Tomcat]. I use 5.5.x and I download the 'Core' distribution.
+Included in the distribution is an example .war file for you to play with. Note that this .war file will only work with Java 1.5 and higher. For easiest setup, download [http://tomcat.apache.org Tomcat]. I use 5.5.x and I download the 'Core' distribution.
 
-Then, copy the kaptcha.war file into the webapps directory. Make sure it is named 'kaptcha.war'. Then, start up Tomcat. I type {{{bin/catalina.sh run}}}.
+Then, copy the kaptcha.war file into the webapps directory. Make sure it is named 'kaptcha.war'. Then, start up Tomcat. I type on Unix: {{{./bin/catalina.sh run}}} or on Windows: {{{bin/catalina.bat run}}}.
 
 Now, visit: http://localhost:8080/kaptcha/KaptchaExample.jsp
 
