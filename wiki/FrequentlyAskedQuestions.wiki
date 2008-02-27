@@ -1,5 +1,5 @@
 #summary Frequently Asked Questions
-#labels Phase-Implementation
+#labels Phase-Implementation,Featured
 
 ===Q: kaptcha images do not show up on my linux box! What's going on?===
 
