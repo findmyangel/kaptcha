@@ -1,0 +1,10 @@
+#summary Frequently Asked Questions
+
+Q: kaptcha images do not show up on my linux box! What's going on?
+
+It *may* be because you are using GNU java. Try running:
+
+java -version
+from the console. If it mentions GNU, then Grails will not run. To fix it, simply download and install a Sun JDK and make sure that its bin directory comes before the GNU java in the path.
+
+Note that this is likely to occur with Ubuntu and OpenSUSE. Other distributions probably package GNU java as well, but these two are confirmed.
