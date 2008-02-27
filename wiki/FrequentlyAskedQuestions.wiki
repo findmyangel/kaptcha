@@ -7,6 +7,6 @@ It *may* be because you are using GNU java. Try running:
 
 `java -version`
 
-from the console. If it mentions GNU, then Grails will not run. To fix it, simply download and install a Sun JDK and make sure that its bin directory comes before the GNU java in the path.
+from the console. If it mentions GNU, then kaptcha will not produce an image. To fix it, simply download and install a Sun JDK and make sure that its bin directory comes before the GNU java in the path.
 
 Note that this is likely to occur with Ubuntu and OpenSUSE. Other distributions probably package GNU java as well, but these two are confirmed.
