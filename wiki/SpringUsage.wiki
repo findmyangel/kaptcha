@@ -1,4 +1,5 @@
 #summary How to use Kaptcha with Spring
+#labels Featured,Phase-Implementation,Phase-Deploy
 
 = Introduction =
 
