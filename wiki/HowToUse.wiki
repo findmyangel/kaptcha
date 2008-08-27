@@ -23,7 +23,7 @@ Here are the details of how to integrate Kaptcha into your own application.
 
 {{{
 <form action="submit.action">
-    <img src="/kaptcha" /> <input type="text" name="kaptcha" value="" />
+    <img src="kaptcha.jpg" /> <input type="text" name="kaptcha" value="" />
 </form>
 }}}
 
@@ -36,7 +36,7 @@ Here are the details of how to integrate Kaptcha into your own application.
 </servlet>
 <servlet-mapping>
 	<servlet-name>Kaptcha</servlet-name>
-	<url-pattern>/kaptcha</url-pattern>
+	<url-pattern>/kaptcha.jpg</url-pattern>
 </servlet-mapping>
 }}}
 
