@@ -22,7 +22,9 @@ If you edit the web.xml file in the exploded kaptcha.war folder you can test cha
 
 Here are the details of how to integrate Kaptcha into your own application.
 
- * Put the image tag into your page:
+* Put the appropriate .jar file (depending on which JDK you are using) into the WEB-INF/lib directory of your .war file.
+
+ * Put the image tag into your page (checking that the path to the .jpg matches up with what is defined in your web.xml below for the url-pattern):
 
 {{{
 <form action="submit.action">
@@ -30,7 +32,7 @@ Here are the details of how to integrate Kaptcha into your own application.
 </form>
 }}}
 
- * Put the reference in your web.xml:
+ * Put the reference in your web.xml (checking that the url-pattern path matches up with what you put in your html fragment above):
 
 {{{
 <servlet>
