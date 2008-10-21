@@ -1,7 +1,7 @@
 #summary Frequently Asked Questions
 #labels Phase-Implementation,Featured
 
-<wiki:gadget url="http://kaptcha.googlecode.com/svn/wiki/adsense3.xml?&amp;w=468&amp;h=60" border="0">
+<wiki:gadget url="http://kaptcha.googlecode.com/svn/wiki/adsense3.xml&w=468&h=60" border="0">
 
 ===Q: kaptcha images do not show up on my linux box! What's going on?===
 
