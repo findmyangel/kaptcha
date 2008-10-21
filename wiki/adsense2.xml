@@ -3,7 +3,6 @@
   <ModulePrefs author_email="latchkey@gmail.com" author="Jon Scott Stevens" author_link="http://www.lookfirst.com/" description="I love adsense" height="60" title="Adsense" title_url="http://www.lookfirst.com/"/>
   <Content type="html">
   	<![CDATA[
-  		alert(gadgets.views.getCurrentView().getName());
   		<script type="text/javascript"><!--
 		google_ad_client = "pub-2477716455432221";
 		/* 468x60, created 10/21/08 */
