@@ -52,7 +52,7 @@ Here are the details of how to integrate Kaptcha into your own application.
 {{{
 String kaptchaExpected = (String)request.getSession()
     .getAttribute(com.google.code.kaptcha.Constants.KAPTCHA_SESSION_KEY);
-String kaptchaReceived = request.getParamater("kaptcha");
+String kaptchaReceived = request.getParameter("kaptcha");
 
 if (kaptchaReceived == null || !kaptchaReceived.equalsIgnoreCase(kaptchaExpected))
 {
