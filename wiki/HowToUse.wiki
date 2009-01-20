@@ -7,6 +7,8 @@
 
 Basic use of [http://code.google.com/p/kaptcha/ kaptcha] in your webapp is quite easy. All you need to do is add the jar to your project, make a reference to the [http://code.google.com/p/kaptcha/ kaptcha] servlet in your web.xml and then check the servlet session for the generated kaptcha value and compare it to what the user submits on your form.
 
+For those of you looking for an audio kaptcha solution, this product probably won't ever support that unless someone else wants to work on it. Sorry.
+
  Note: If you are currently using JCaptcha in the same .war file as Kaptcha, you will have a conflict with the image 
  generation library. You must remove JCaptcha. See [http://code.google.com/p/kaptcha/issues/detail?id=18 this issue] for details.
 
