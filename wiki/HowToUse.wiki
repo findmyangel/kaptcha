@@ -80,6 +80,15 @@ If you love [http://jquery.com JQuery] like I do, you can use it to easily solve
 <br /><small>Can't read the image? Click it to get a new one.</small>
 }}}
 
+If you want to get fancy, you can add an extra visual effect when refreshing the image. This example uses the fadeIn() effect when you click on it:
+
+{{{
+  $('#kaptchaImage').click(function () { 
+    $(this).hide()
+      .attr('src', '/kaptcha.jpg?' + Math.floor(Math.random()*100) )
+      .fadeIn(); 
+  })
+}}}
 == Customization ==
 
 There are many [ConfigParameters web.xml parameters] to customize the output of the kaptcha.
