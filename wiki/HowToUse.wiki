@@ -74,7 +74,7 @@ If you love [http://jquery.com JQuery] like I do, you can use it to easily solve
 <img src="/kaptcha" width="200" id="kaptchaImage" />
 <script type="text/javascript">
     $(function(){
-        $('#kaptchaImage').click(function () { $(this).attr('src', '/kaptcha?' + Math.floor(Math.random()*100) ); })
+        $('#kaptchaImage').click(function () { $(this).attr('src', '/kaptcha.jpg?' + Math.floor(Math.random()*100) ); })
     });
 </script>
 <br /><small>Can't read the image? Click it to get a new one.</small>
