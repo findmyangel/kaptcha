@@ -3,6 +3,8 @@
 
 <wiki:gadget url="http://kaptcha.googlecode.com/svn/wiki/adsense3.xml" border="0" width="468" height="60" />
 
+<wiki:gadget url="http://kaptcha.googlecode.com/svn/wiki/donate.xml" border="0" width="140" height="70" />
+
 ===Q: kaptcha images do not show up on my linux box! What's going on?===
 
 It *may* be because you are using GNU java. Try running:
@@ -12,3 +14,5 @@ It *may* be because you are using GNU java. Try running:
 from the console. If it mentions GNU, then kaptcha will not produce an image. To fix it, simply download and install a Sun JDK and make sure that its bin directory comes before the GNU java in the path.
 
 Note that this is likely to occur with Ubuntu and OpenSUSE. Other distributions probably package GNU java as well, but these two are confirmed.
+
+<wiki:gadget url="http://kaptcha.googlecode.com/svn/wiki/donate.xml" border="0" width="140" height="70" />
