@@ -28,7 +28,7 @@ Marc Schipperheyn (m.schipperheynNOSPAMMERSgmail.com) gratefully contributed the
 	class="com.google.code.kaptcha.impl.DefaultKaptcha">
 	<property name="config">
 		<bean class="com.google.code.kaptcha.util.Config">
-			<constructor-arg type="java.util.Properties>
+			<constructor-arg type="java.util.Properties">
 				<value>kaptcha.border=yes</value>
 			</constructor-arg>
 		</bean>
