@@ -1,11 +1,11 @@
 #summary How to use kaptcha
 #labels Featured
 
-<wiki:gadget url="http://kaptcha.googlecode.com/svn/wiki/adsense3.xml" border="0" width="468" height="60" />
+<wiki:gadget url="http://kaptcha.googlecode.com/svn/wiki/adsense3.xml" border="0" width="470" height="60" />
 
 = Introduction =
 
-<wiki:gadget url="http://kaptcha.googlecode.com/svn/wiki/donate.xml" border="0" width="140" height="70" />
+<wiki:gadget url="http://kaptcha.googlecode.com/svn/wiki/donate.xml" border="0" width="150" height="75" />
 
 Basic use of [http://code.google.com/p/kaptcha/ kaptcha] in your webapp is quite easy. All you need to do is add the jar to your project, make a reference to the [http://code.google.com/p/kaptcha/ kaptcha] servlet in your web.xml and then check the servlet session for the generated kaptcha value and compare it to what the user submits on your form.
 
@@ -95,6 +95,6 @@ If you want to get fancy, you can add an extra visual effect when refreshing the
 
 There are many [ConfigParameters web.xml parameters] to customize the output of the kaptcha.
 
-<wiki:gadget url="http://kaptcha.googlecode.com/svn/wiki/donate.xml" border="0" width="140" height="70" />
+<wiki:gadget url="http://kaptcha.googlecode.com/svn/wiki/donate.xml" border="0" width="150" height="75" />
 
-<wiki:gadget url="http://kaptcha.googlecode.com/svn/wiki/adsense3.xml" border="0" width="468" height="60" />
+<wiki:gadget url="http://kaptcha.googlecode.com/svn/wiki/adsense3.xml" border="0" width="470" height="60" />
