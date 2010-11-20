@@ -35,6 +35,7 @@ These values are stored in the {{{com.google.code.kaptcha.Constants}}} class.
 || kaptcha.textproducer.font.names || A list of comma separated font names. || Arial, Courier ||
 || kaptcha.textproducer.font.size || The size of the font to use. || 40px. ||
 || kaptcha.textproducer.font.color || The color to use for the font. Legal values are r,g,b. || black ||
+|| kaptcha.textproducer.char.space || The space between the characters || 2 ||
 || kaptcha.noise.impl || The noise producer. || com.google.code.kaptcha.impl.DefaultNoise ||
 || kaptcha.noise.color || The noise color. Legal values are r,g,b. || black ||
 || kaptcha.obscurificator.impl || The obscurificator implementation. || com.google.code.kaptcha.impl.WaterRipple ||
