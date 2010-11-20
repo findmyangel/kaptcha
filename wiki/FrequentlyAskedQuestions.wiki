@@ -1,9 +1,9 @@
 #summary Frequently Asked Questions
 #labels Phase-Implementation,Featured
 
-<wiki:gadget url="http://kaptcha.googlecode.com/svn/wiki/adsense3.xml" border="0" width="468" height="60" />
+<wiki:gadget url="http://kaptcha.googlecode.com/svn/wiki/adsense3.xml" border="0" width="470" height="60" />
 
-<wiki:gadget url="http://kaptcha.googlecode.com/svn/wiki/donate.xml" border="0" width="140" height="70" />
+<wiki:gadget url="http://kaptcha.googlecode.com/svn/wiki/donate.xml" border="0" width="150" height="75" />
 
 ===Q: kaptcha images do not show up on my linux box! What's going on?===
 
@@ -50,4 +50,4 @@ r,g,b:
 </init-param>
 }}}
 
-<wiki:gadget url="http://kaptcha.googlecode.com/svn/wiki/donate.xml" border="0" width="140" height="70" />
+<wiki:gadget url="http://kaptcha.googlecode.com/svn/wiki/donate.xml" border="0" width="150" height="75" />
