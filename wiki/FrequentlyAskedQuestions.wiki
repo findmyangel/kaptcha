@@ -50,4 +50,12 @@ r,g,b:
 </init-param>
 }}}
 
+===Q: java.lang.NoClassDefFoundError: Could not initialize class sun.awt.X11GraphicsEnvironment===
+
+When starting up the JVM, add the parameter:
+{{{
+-Djava.awt.headless=true
+}}}
+
+This article also looks good: http://www.fromdev.com/2010/06/how-to-solve-kaptcha-error-on-glassfish.html
 <wiki:gadget url="http://kaptcha.googlecode.com/svn/wiki/donate.xml" border="0" width="150" height="75" />
