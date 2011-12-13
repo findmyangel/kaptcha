@@ -31,7 +31,12 @@ Marc Schipperheyn (m.schipperheynNOSPAMMERSgmail.com) gratefully contributed the
 	<property name="config">
 		<bean class="com.google.code.kaptcha.util.Config">
 			<constructor-arg type="java.util.Properties">
-				<value>kaptcha.border=yes</value>
+				<props>
+					<prop key="kaptcha.image.width">300</prop> 
+					<prop key="kaptcha.image.height">25</prop>
+					<prop key="kaptcha.textproducer.char.string">0123456789</prop>
+					<prop key="kaptcha.textproducer.char.length">4</prop>
+				</props>
 			</constructor-arg>
 		</bean>
 	</property>
