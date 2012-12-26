@@ -77,14 +77,6 @@ public class KaptchaServlet extends HttpServlet implements Servlet
 		// create the text for the image
 		String capText = this.kaptchaProducer.createText();
 
-		// store the text in the session
-		req.getSession().setAttribute(this.sessionKeyValue, capText);
-
-		// store the date in the session so that it can be compared
-		// against to make sure someone hasn't taken too long to enter
-		// their kaptcha
-		req.getSession().setAttribute(this.sessionKeyDateValue, new Date());
-
 		// create the image with the text
 		BufferedImage bi = this.kaptchaProducer.createImage(capText);
 
@@ -92,5 +84,15 @@ public class KaptchaServlet extends HttpServlet implements Servlet
 
 		// write the data out
 		ImageIO.write(bi, "jpg", out);
+
+		// fixes issue #69: set the attributes after we write the image in case the image writing fails.
+
+		// store the text in the session
+		req.getSession().setAttribute(this.sessionKeyValue, capText);
+
+		// store the date in the session so that it can be compared
+		// against to make sure someone hasn't taken too long to enter
+		// their kaptcha
+		req.getSession().setAttribute(this.sessionKeyDateValue, new Date());
 	}
 }
